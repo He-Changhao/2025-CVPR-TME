@@ -1,0 +1,16 @@
+transformers==4.36.0
+tqdm==4.67.0
+pandas==2.2.3
+omegaconf==2.3.0
+iopath==0.1.10
+timm==0.9.12
+decord==0.6.0
+webdataset==0.2.86
+opencv-python==4.10.0.84
+fairscale==0.4.13
+einops==0.7.0
+scikit-image==0.24.0
+spacy==3.7.6
+pycocoevalcap==1.2
+mkl==2023.1.0 # Using MKL versions 2024.1+ with PyTorch may result in an "ImportError: undefined symbol: iJIT_NotifyEvent".
+scikit-learn==1.5.2

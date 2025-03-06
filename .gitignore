@@ -1,0 +1,15 @@
+*.log
+*.pyc
+.ipynb_checkpoints
+__pycache__
+bert-base-uncased
+log_TME
+weight
+data
+Trash
+models_weight
+features
+run_log
+shell_scripts
+test_train.sh
+test.ipynb
