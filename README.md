@@ -131,7 +131,7 @@ python precompute_test.py \
 
 We provide the best TME model weight for CIRR and FashionIQ in the setting without sythetic noise in kaggle.
 
-Weights: model_CIRR.pth, model_FashionIQ.pth
+Weights: [CIRR](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/cirr-0.0-best), [FashionIQ](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/fashioniq-0.0-best).
 
 ### Acknowledgement
 
