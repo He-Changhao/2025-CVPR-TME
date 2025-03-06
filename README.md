@@ -84,6 +84,7 @@ Encodings via Frozen ViT remain unchanged during training. To save time, we prec
 python src/precompute.py \
     --dataset {'CIRR' or 'FashionIQ'} \
     --split {'test1', 'train' or 'val'} \
+    --batch_size 512
 ~~~
 
 Storing features requires a lot of space. If your storage is insufficient, you can call `compute_vit_features()` in `precompute.py` to generate the features (as a CPU tensor) and the name_to_idx dictionary. Then, replace `load_image_features()` with `load_image_features_tensor_and_dict()` in `precompute_train.py` and `precompute_test.py` to avoid loading features from local disk storage.
