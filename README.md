@@ -72,7 +72,11 @@ CIRRPath = './data/CIRR/' # end with '/'
 
 ### Pretrained wegiht
 
-Download the BLIP2 weights, `blip2_pretrained.pth`, from 'https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth' and `eva_vit_g.pth` from 'https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth', and place them in the weight directory. To use the online url during training, simply edit the following file: `src/lavis/models/blip2_models/blip2.py line 85-98` and `src/lavis/models/eva_vit.py line 428-447`.
+Download the BLIP2 weights and place them in the `weight` directory. 
+- `blip2_pretrained.pth`: 'https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth' 
+- `eva_vit_g.pth`: 'https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth'
+
+ To use the online url during training, simply edit the following file: `src/lavis/models/blip2_models/blip2.py line 85-98` and `src/lavis/models/eva_vit.py line 428-447`.
 
 ## Runing
 
