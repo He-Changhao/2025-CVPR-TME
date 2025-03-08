@@ -2,7 +2,7 @@
 # dataset: CIRR or FashionIQ
 # gpu: the index of gpu to be used, default to 0
 # name: the name of folder; the folder will be output to the weight directory
-python precompute_test.py \
+python src/precompute_test.py \
     --dataset "CIRR" \
     --mode "validate" \
     --model-path "${your_model_path}" \

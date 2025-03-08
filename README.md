@@ -124,7 +124,7 @@ python src/precompute_train.py \
 Note that the test mode is only for CIRR.
 
 ~~~
-python precompute_test.py \
+python src/precompute_test.py \
     --dataset {CIRR or FashionIQ} \
     --mode {validate or test} \
     --model-path {your_model_path} \
