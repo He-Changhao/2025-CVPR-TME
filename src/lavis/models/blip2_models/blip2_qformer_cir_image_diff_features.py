@@ -89,7 +89,7 @@ class Blip2QformerCirImageDiffFeatures(Blip2Base):
         return self.visual_encoder(image)
     
     # Image Encoder
-    def encode_image(self, image_embeds, query_tokens=None, ln=True, debug=False):
+    def encode_image(self, image_embeds, query_tokens=None, ln=True):
         """_summary_
         Args:
             image_embeds (_type_): Tensor, Image representation encoded by ViT
@@ -100,8 +100,6 @@ class Blip2QformerCirImageDiffFeatures(Blip2Base):
         if ln:
             with self.maybe_autocast():
                 image_embeds = self.ln_vision(image_embeds)
-        if debug:
-            torch.save(image_embeds, 'tmp/pc_ln_V_i.pt')
         if query_tokens is None:
             query_tokens = self.query_tokens.expand(image_embeds.shape[0], -1, -1)
         image_atts = torch.ones(image_embeds.size()[:-1], dtype=torch.long).to(
