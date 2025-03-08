@@ -90,12 +90,13 @@ class Blip2QformerCirImageDiffFeatures(Blip2Base):
     
     # Image Encoder
     def encode_image(self, image_embeds, query_tokens=None, ln=True):
-        """_summary_
+        """ Encode images.
         Args:
-            image_embeds (_type_): Tensor, Image representation encoded by ViT
-
+            image_embeds (Tensor): Image representations encoded by ViT.
+            query_tokens (Tensor): The query tokens of Q-Former.
+            ln (Tensor): whether to perform layer norm.
         Returns:
-            _type_: Tensor, Image representation encoded by Qformer
+            Tensor: Image representation encoded by Qformer.
         """
         if ln:
             with self.maybe_autocast():
@@ -116,13 +117,15 @@ class Blip2QformerCirImageDiffFeatures(Blip2Base):
     # Fusion Encoder
     def encode_fusion(self, F_image, text_tokens, 
                       no_image=False, diff_embeds=None, clean_label=None, pn_loss=None):
-        """_summary_
-
+        """Fuse image representations with texts, image representations with image difference representations or prompt tokens with texts.
+        
         Args:
-            query_tokens (Tensor): , Image representation, or prompt tokens
+            F_image (Tensor): , Image representation, or prompt tokens
             text_tokens (Tensor): text_tokens
-            diff_embeds (Tensorm optional): Diff encode
-            no_image (bool, optional): _description_. Defaults to False.
+            no_image (bool, optional): no_image is True if F_image is prompt tokens, Defaults to False.
+            diff_embeds (Tensor optional): image difference encodings.
+            clean_label (Tensor optional): the pseudo-labels indicating the cleanliness of triplets.
+            pn_loss (dict optional): the loss settings.
         """
         bs = text_tokens.input_ids.shape[0]
         image_atts = torch.ones(F_image.shape[:-1], dtype=torch.long).to(
