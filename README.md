@@ -1,4 +1,8 @@
-# Learning with Noisy Triplet correspondence for Compose Image Retrieval (CVPR 2025)
+# 2025-CVPR-TME
+
+[[CVPR 2025](https://cvpr.thecvf.com/)] Code for the paper "[Learning with Noisy Triplet Correspondence for Composed Image Retrieval](2025-CVPR-TME/TME.pdf)"
+
+![](2025-CVPR-TME/pipeline.jpg)
 
 ## Preparation
 
@@ -139,18 +143,18 @@ We provide the best TME model weight for CIRR and FashionIQ in the setting witho
 Weights: [CIRR](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/cirr-0.0-best), [FashionIQ](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/fashioniq-0.0-best).
 
 
-### Experiment Results
+## Experiment Results
 
-#### CIRR performance:
+### CIRR performance:
 
-![](2025-CVPR-TME/CIRR.png)
+![](2025-CVPR-TME/CIRR.jpg)
 
-#### FashionIQ performance:
+### FashionIQ performance:
 
-![](2025-CVPR-TME/FashionIQ.png)
+![](2025-CVPR-TME/FashionIQ.jpg)
 
 
-### Citation
+## Citation
 
 If you find our work useful in your research, please consider citing:
 
@@ -163,6 +167,6 @@ If you find our work useful in your research, please consider citing:
 }
 ```
 
-### Acknowledgement
+## Acknowledgement
 
 Our implementation is based on [CLIP4Cir](https://github.com/ABaldrati/CLIP4Cir) and [LAVIS](https://github.com/salesforce/LAVIS).
