@@ -138,6 +138,31 @@ We provide the best TME model weight for CIRR and FashionIQ in the setting witho
 
 Weights: [CIRR](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/cirr-0.0-best), [FashionIQ](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/fashioniq-0.0-best).
 
+
+### Experiment Results
+
+#### CIRR performance:
+
+![](2025-CVPR-TME/CIRR.png)
+
+#### FashionIQ performance:
+
+![](2025-CVPR-TME/FashionIQ.png)
+
+
+### Citation
+
+If you find our work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{TME,
+  title={Learning with Noisy Triplet correspondence for Compose Image Retrieval},
+  author={Li, Shuxian and He, Changhao and Liu, Xiting and Zhou, Joey Tianyi and Peng, Xi and Hu, Peng},
+  booktitle={IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+}
+```
+
 ### Acknowledgement
 
 Our implementation is based on [CLIP4Cir](https://github.com/ABaldrati/CLIP4Cir) and [LAVIS](https://github.com/salesforce/LAVIS).
