@@ -1,6 +1,6 @@
 # 2025-CVPR-TME
 
-[[CVPR 2025](https://cvpr.thecvf.com/)] Code for the paper "[Learning with Noisy Triplet Correspondence for Composed Image Retrieval](2025-CVPR-TME/TME.pdf)"
+[[CVPR 2025](https://cvpr.thecvf.com/)] Code for the paper "[Learning with Noisy Triplet Correspondence for Composed Image Retrieval](https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Learning_with_Noisy_Triplet_Correspondence_for_Composed_Image_Retrieval_CVPR_2025_paper.pdf)"
 
 ![](2025-CVPR-TME/pipeline.jpg)
 
@@ -159,11 +159,13 @@ Weights: [CIRR](https://www.kaggle.com/models/charlesneilsucian/tme/pyTorch/cirr
 If you find our work useful in your research, please consider citing:
 
 ```bibtex
-@inproceedings{TME,
-  title={Learning with Noisy Triplet correspondence for Compose Image Retrieval},
-  author={Li, Shuxian and He, Changhao and Liu, Xiting and Zhou, Joey Tianyi and Peng, Xi and Hu, Peng},
-  booktitle={IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025},
+@InProceedings{TME,
+    author    = {Li, Shuxian and He, Changhao and Liu, Xiting and Zhou, Joey Tianyi and Peng, Xi and Hu, Peng},
+    title     = {Learning with Noisy Triplet Correspondence for Composed Image Retrieval},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {19628-19637}
 }
 ```
 
